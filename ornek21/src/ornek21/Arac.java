@@ -3,10 +3,12 @@ package ornek21;
 public class Arac {
 	private double hiz;
 	private double yol;
+	private String marka;
 	
-	public Arac() {
+	public Arac(String marka) {
 		hiz=0;
 		yol=0;
+		this.marka = marka;
 	}
 	public void hizlan(double hiz) {
 		this.hiz = hiz;
@@ -16,5 +18,8 @@ public class Arac {
 	}
 	public double getYol() {
 		return yol;
+	}
+	public String getMarka(){
+	   return marka;
 	}
 }
